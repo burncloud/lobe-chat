@@ -7,6 +7,7 @@ import AzureProvider from './azure';
 import AzureAIProvider from './azureai';
 import BaichuanProvider from './baichuan';
 import BedrockProvider from './bedrock';
+import BurnCloudProvider from './burncloud';
 import CloudflareProvider from './cloudflare';
 import CohereProvider from './cohere';
 import DeepSeekProvider from './deepseek';
@@ -76,6 +77,7 @@ export const LOBE_DEFAULT_MODEL_LIST: ChatModelCard[] = [
   FireworksAIProvider.chatModels,
   PerplexityProvider.chatModels,
   AnthropicProvider.chatModels,
+  BurnCloudProvider.chatModels,
   HuggingFaceProvider.chatModels,
   XAIProvider.chatModels,
   JinaProvider.chatModels,
@@ -113,6 +115,7 @@ export const DEFAULT_MODEL_PROVIDER_LIST = [
   VLLMProvider,
   XinferenceProvider,
   AnthropicProvider,
+  BurnCloudProvider,
   BedrockProvider,
   GoogleProvider,
   VertexAIProvider,
@@ -177,6 +180,7 @@ export { default as AzureProviderCard } from './azure';
 export { default as AzureAIProviderCard } from './azureai';
 export { default as BaichuanProviderCard } from './baichuan';
 export { default as BedrockProviderCard } from './bedrock';
+export { default as BurnCloudProviderCard } from './burncloud';
 export { default as CloudflareProviderCard } from './cloudflare';
 export { default as CohereProviderCard } from './cohere';
 export { default as DeepSeekProviderCard } from './deepseek';

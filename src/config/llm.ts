@@ -37,6 +37,9 @@ export const getLLMConfig = () => {
       ENABLED_ANTHROPIC: z.boolean(),
       ANTHROPIC_API_KEY: z.string().optional(),
 
+      ENABLED_BURNCLOUD: z.boolean(),
+      BURNCLOUD_API_KEY: z.string().optional(),
+
       ENABLED_MINIMAX: z.boolean(),
       MINIMAX_API_KEY: z.string().optional(),
 
@@ -195,6 +198,9 @@ export const getLLMConfig = () => {
 
       ENABLED_ANTHROPIC: !!process.env.ANTHROPIC_API_KEY,
       ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY,
+
+      ENABLED_BURNCLOUD: !!process.env.BURNCLOUD_API_KEY,
+      BURNCLOUD_API_KEY: process.env.BURNCLOUD_API_KEY,
 
       ENABLED_MINIMAX: !!process.env.MINIMAX_API_KEY,
       MINIMAX_API_KEY: process.env.MINIMAX_API_KEY,
